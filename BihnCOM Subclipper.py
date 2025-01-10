@@ -57,12 +57,11 @@ for item in timeline_items:
     if media_pool_item:
         # Create a subclip in the Media Pool
         clip_name = media_pool_item.GetName()
-        # clipName = media_pool_item.GetName()
         file_path = media_pool_item.GetClipProperty("File Path")
 
         print(f"Processing clip: {clip_name}")
         print(f"File Path: {file_path}")
-        # print(f"Start Frame: {start_frame}, End Frame: {end_frame}")
+
         print(f"Source Start Frame: {source_start_frame}, Source End Frame: {source_end_frame}")
 
         # Add subclip to Media Pool:
